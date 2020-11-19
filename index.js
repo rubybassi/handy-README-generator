@@ -38,6 +38,7 @@ const userResponse = () =>
       type: "list",
       message: "Please select a license for your project from the list:",
       choices: ["MIT", "ISC"],
+      default: "none",
       name: "license",
     },
     {
