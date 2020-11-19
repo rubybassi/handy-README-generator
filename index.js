@@ -1,4 +1,4 @@
-const fs = require("fs").promises;
+const fs = require("fs");
 const inquirer = require("inquirer");
 
 const userResponse = () =>
@@ -31,26 +31,23 @@ const userResponse = () =>
     },
     {
       type: "input",
-      message:
-        "Briefly explain any instructions for running tests.",
+      message: "Briefly explain any instructions for running tests.",
       name: "tests",
     },
     {
-        type: "list",
-        message:
-          "Please select a license for your project from the list:",
-        choices: [],  
-        name: "license",
-      },
-      {
-        type: "input",
-        message:
-          "Please enter your github username (without spaces)",
-        name: "username",
-      },
+      type: "list",
+      message: "Please select a license for your project from the list:",
+      choices: ["MIT", "ISC"],
+      name: "license",
+    },
+    {
+      type: "input",
+      message: "Please enter your github username (without spaces)",
+      name: "username",
+    },
   ]);
 
-let buildReadme = (answers) =>
+const buildReadme = (answers) =>
   `![](https://img.shields.io/badge/license-${answers.license}-Green)
 
 # ${answers.title}
