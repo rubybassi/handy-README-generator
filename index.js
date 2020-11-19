@@ -37,8 +37,8 @@ const userResponse = () =>
     {
       type: "list",
       message: "Please select a license for your project from the list:",
-      choices: ["MIT", "ISC"],
-      default: "none",
+      choices: ["MIT", "ISC", "Creative Commons", "Apache License 2.0", "GNU GPLv2", "GNU GPLv3 f","No License"],
+      default: "No License",
       name: "license",
     },
     {
