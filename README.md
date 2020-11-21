@@ -6,12 +6,12 @@
 This command-line application dynamically generates a professional README.md file from a user's input using the Inquirer package. It is written in Javascript and node.js.
 
 ## Table of Contents
-- [Installation](Installation)
-- [Usage](Usage)
-- [Contributing](Contributing)
-- [Test](Test)
-- [License](License)
-- [Questions](Questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Test](#Test)
+- [License](#License)
+- [Questions](#Questions)
 
 ## Installation
 ```node index.js```
