@@ -5,9 +5,11 @@
 ## Description
 This command-line application dynamically generates a professional README.md file from a user's input using the Inquirer package. It is written in Javascript and node.js.
 
-![Comman Line Prompts](develop/readme-demo.png)
+> Watch a full demo video on my [YouTube channel](https://youtu.be/M6oav3l6Iko)
 
-[Watch a full demo video on my YouTube channel](https://youtu.be/M6oav3l6Iko)
+## Preview of the command line prompts
+
+![Sample](develop/readme-demo.png)
 
 ## Table of Contents
 - [Installation](#Installation)
