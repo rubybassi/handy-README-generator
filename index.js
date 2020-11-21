@@ -4,9 +4,9 @@ const emoji = require('node-emoji')
 
 const welcomeMessage =
   `Welcome to the Handy READme Generator! 
-  You will be asked a series of nine questions to help build your markdown file. 
+  You will be asked a series of 10 questions to help build your markdown file. 
   To create a new line use <br>`;
-  
+
 console.log(emoji.get('pizza'), welcomeMessage);
 
 const userResponse = () =>
@@ -18,12 +18,17 @@ const userResponse = () =>
     },
     {
       type: "input",
-      message: "Enter a concise description about your project:",
+      message: "Enter a brief description about your project:",
       name: "description",
     },
     {
       type: "input",
-      message: "Give brief instructions on installation:",
+      message: "Type the command code for installation:",
+      name: "command",
+    },
+    {
+      type: "input",
+      message: "Add additional notes on installation or press enter to skip:",
       name: "installation",
     },
     {
@@ -78,6 +83,10 @@ ${answers.description}
 - [Questions](Questions)
 
 ## Installation
+Install ${answers.title}:
+
+\`\`\`${answers.command}\`\`\`
+
 ${answers.installation}
 
 ## Usage
@@ -87,7 +96,7 @@ ${answers.usage}
 ${answers.contribution}
 
 ## Test
-${answers.test}
+${answers.tests}
 
 ## License
 ${answers.license}
@@ -95,7 +104,7 @@ ${answers.license}
 ## Questions
 Follow me on [GitHub: ${answers.username}](https://github.com/${answers.username})
 
-If you have any additional questions, simply email me at <${answers.email}> and i'll respond as soon as possible.`;
+If you have any additional questions, simply email me at ${answers.email} and i'll respond as soon as possible.`;
 
 userResponse()
   .then((answers) => {
