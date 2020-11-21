@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rubybassi/handy-README-generator#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "node-emoji": "^1.10.0"
   }
 }
