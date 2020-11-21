@@ -7,7 +7,7 @@ const welcomeMessage =
   You will be asked a series of 10 questions to help build your markdown file. 
   To create a new line use <br>`;
 
-console.log(emoji.get('pizza'), welcomeMessage);
+console.log(emoji.get('wave'), welcomeMessage);
 
 const userResponse = () =>
   inquirer.prompt([
@@ -44,7 +44,7 @@ const userResponse = () =>
     },
     {
       type: "input",
-      message: "Briefly explain any instructions for running tests;",
+      message: "Briefly explain any instructions for running tests:",
       name: "tests",
     },
     {
@@ -109,7 +109,7 @@ If you have any additional questions, simply email me at ${answers.email} and i'
 userResponse()
   .then((answers) => {
     const md = buildReadme(answers);
-    fs.writeFileSync("output.md", md);
+    fs.writeFileSync("generatedREADME.md", md);
   })
   .then(() => console.log(emoji.get('white_check_mark'),"Great news! Your README markdown file has been succesfully created!"))
   .catch(() => console.error(err));
