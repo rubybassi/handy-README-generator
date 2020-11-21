@@ -83,8 +83,6 @@ ${answers.description}
 - [Questions](Questions)
 
 ## Installation
-Install ${answers.title}:
-
 \`\`\`${answers.command}\`\`\`
 
 ${answers.installation}
@@ -104,7 +102,7 @@ ${answers.license}
 ## Questions
 Follow me on [GitHub: ${answers.username}](https://github.com/${answers.username})
 
-If you have any additional questions, simply email me at ${answers.email} and i'll respond as soon as possible.`;
+If you have any additional questions, simply email me at <${answers.email}> and i'll respond as soon as possible.`;
 
 userResponse()
   .then((answers) => {
