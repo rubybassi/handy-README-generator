@@ -75,12 +75,12 @@ const buildReadme = (answers) =>
 ${answers.description}
 
 ## Table of Contents
-- [Installation](Installation)
-- [Usage](Usage)
-- [Contributing](Contributing)
-- [Test](Test)
-- [License](License)
-- [Questions](Questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Test](#Test)
+- [License](#License)
+- [Questions](#Questions)
 
 ## Installation
 \`\`\`${answers.command}\`\`\`
