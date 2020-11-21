@@ -5,7 +5,7 @@ const emoji = require('node-emoji')
 const welcomeMessage =
   `Welcome to the Handy READme Generator! 
   You will be asked a series of 10 questions to help build your markdown file. 
-  To create a new line use <br>`;
+  To create a new line at any time, use <br>`;
 
 console.log(emoji.get('wave'), welcomeMessage);
 
